@@ -233,7 +233,7 @@ svg{
     height: 50px;
     border-radius: 50%;}
     to{
-        width: 100vw;
+        width: 200vh;
         height: 200vh;
         border-radius:0;
     }
@@ -390,7 +390,13 @@ to{transform: translateY(-70vh) translateX(70vw);}
         display: none;
     }
 
-    
+    .loader-text {
+
+        font-size: 3rem;
+   
+    }
+
+
 
 
 
