@@ -658,7 +658,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-frame projectbut3">
+                <!-- <div class="project-frame projectbut3">
                     <h2 class="project-title"> Nom 33333333333333333du Projet</h2>
                     <div class="project-down">
                         <div class="project-left">
@@ -693,7 +693,7 @@
                         </div>
                         <div class="project-right"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati veritatis nobis. Earum libero ea nam ad ipsum possimus similique eum perferendis provident! Recusandae architecto temporibus reiciendis rem modi qui.</p></div>
                     </div>
-                </div>
+                </div> -->
                 <script src="project.js"></script>
             </div>
         </section>
@@ -758,7 +758,25 @@
         cursor.style.borderColor = "var(--second-color)"; // Remet la couleur d'origine du contour
         cursorIn.style.backgroundColor = "var(--second-color)"; // Remet la couleur d'origine intérieure
     });
+
     })
+
+
+    document.querySelectorAll(".nav-number ul li").forEach(element =>{
+        element.addEventListener("mouseover",function(){
+            cursorIn.style.animation="cursorInScale 0.5s ease forwards"
+
+        })
+
+        element.addEventListener("mouseleave", function() {
+   
+            cursorIn.style.animation="none"
+
+    });
+})
+
+
+
 
     
 </script>

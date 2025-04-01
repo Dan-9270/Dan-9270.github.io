@@ -228,6 +228,26 @@ svg{
     to{transform: translateY(-50vh);}
     
 }
+
+@media screen and (max-width:800px) {
+
+    @keyframes toTop {
+        from{transform: translateY(0);}
+        to{transform: translateY(0vh);}
+        
+    }
+
+    .bubble{
+        background-color:var(--main-color);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        animation: explosion 0.8s linear,explosion 0.8s 0.8s linear,toTop 0.3s 1.2s linear forwards,expand 0.5s 1.2s linear forwards,expand 0.5s 3.5s reverse forwards, toTop 0.3s 3.1s reverse forwards,explosion2 1s 4s alternate, toTopRight 0.4s 4.4s linear forwards;
+    }
+    
+
+
+}
 @keyframes expand {
     from{ width: 50px;
     height: 50px;
@@ -304,6 +324,16 @@ to{transform: translateY(-70vh) translateX(70vw);}
     top: 0;
     left: 0;
     transform: translate(-50%,-50%);
+}
+
+@keyframes cursorInScale{
+    from{
+        height: 9px;
+        width: 9px;
+    }to{
+        width: 20px;
+        height: 20px;
+    }
 }
 /* 
 .paint{
